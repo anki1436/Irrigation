@@ -1,0 +1,398 @@
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: $white-color;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 22px;
+    position: relative;
+    @include breakpoint("mobile-max") {
+      padding: 0 10px;
+    }
+  
+
+    @include breakpoint("ipad-max") {
+      padding-top: 9px;
+      padding-bottom: 15px;
+    }
+    @include breakpoint("mobile-max") {
+      padding-top: 6px;
+      padding-bottom: 11px;
+      
+    }
+    @include breakpoint("portrait-mobile-max") {
+      padding: 0 3px;
+      flex-direction: row;
+    }
+    @media (max-width:471px) {
+      justify-content: center;
+    }
+
+
+    .logo {
+      display: flex;
+      align-items: center;
+     
+      @include breakpoint("portrait-mobile-max") {
+        padding: 5px 0;
+      }
+
+      &__left {
+        @include equal(42px);
+        @include breakpoint("ipad-max") {
+        }
+        @include breakpoint("portrait-mobile-max") {
+          @include equal(32px);
+            }
+      }
+      &__right {
+        font-size: 15px;
+        font-weight: 700;
+        text-align: start;
+        text-transform: uppercase;
+        margin: 0 0 0 5px;
+        @include breakpoint("ipad-max") {
+          font-size: 14px;
+          margin: 0 0 0 3px;
+        }
+        @include breakpoint("portrait-mobile-max") {
+      font-size: 12px;
+        }
+      }
+    }
+    .hamburger {
+      display: none;
+      height: 25px;
+      width: 25px;
+      justify-content: center;
+      align-items: center;
+
+      margin-left: 15px;
+      position: relative;
+      margin-left: 13px;
+      @include breakpoint("portrait-mobile-max") {
+        margin-left: 5px;
+
+    
+      }                
+
+
+      &__line {
+        width: 16px;
+        height: 2px;
+        background: $text-color;
+        position: relative;
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        &::before {
+          position: absolute;
+          top: 5px;
+          width: 16px;
+          height: 2px;
+          background: $text-color;
+          content: "";
+        }
+        &::after {
+          position: absolute;
+          bottom: 5px;
+          width: 16px;
+          height: 2px;
+          background: $text-color;
+          content: "";
+        }
+      }
+      &__line.close {
+        position: absolute;
+        background: transparent;
+        top: 6px;
+        &:hover {
+          transform: scale(1.3);
+        }
+        &::before {
+          background: $text-color;
+          position: absolute;
+          transform: rotate(45deg);
+          bottom: 0;
+        }
+        &::after {
+          background: $text-color;
+          position: absolute;
+          transform: rotate(-45deg);
+          top: 5px;
+        }
+      }
+
+      @include breakpoint("ipad-max") {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .nav-link {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+
+      @include breakpoint("ipad-max") { 
+        align-items: center;
+      }
+
+      .link-list {
+        display: flex;
+        align-items: flex-end;
+
+
+
+        &:not(:last-child) {
+          border-right: $blue-border;
+        }
+      
+        .link {
+          text-transform: capitalize;
+          display: flex;
+          font-size: 14px;
+          width: max-content;
+         
+          @include breakpoint("ipad-max") {
+            font-size: 16px;
+          }
+        }
+      }
+      &__top-link {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 13px;
+
+        @include breakpoint("ipad-max") {
+          margin-bottom: 0;
+        }
+        @include breakpoint("portrait-mobile-max") {
+          padding: 5px 0;
+        }
+      
+        .link-list {
+          .link {
+            
+
+              padding: 0 10px;
+            
+
+            @include breakpoint("mobile-max") {
+              padding: 0 5px;
+            }
+            
+            @include breakpoint("portrait-mobile-max") {
+              padding: 0 2px;
+            }
+           
+          }
+          .desktop-link {
+            display: block;
+
+            @include breakpoint("ipad-max") {
+              display: none;
+            }
+          }
+        }
+
+        .extrasmall {
+          font-size: 11px;
+          @include breakpoint("portrait-mobile-max") {
+            font-size: 8px;
+          }
+        }
+        .medium {
+          font-size: 14px;
+          @include breakpoint("portrait-mobile-max") {
+            font-size: 11px;
+          }
+        }
+        .large {
+          font-size: 16px;
+          @include breakpoint("portrait-mobile-max") {
+            font-size: 13px;
+          }
+        }
+        .large,
+        .medium,
+        .extrasmall {
+          font-weight: 700;
+          font-family: $secondary-font;
+          text-transform: capitalize;
+          padding: 0 8px ;
+
+          @include breakpoint("mobile-max") {
+            padding: 0 3px;
+          }
+         
+        }
+
+        .search-container {
+          margin-left: 13px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include breakpoint("portrait-mobile-max") {
+            margin-left: 6px;
+
+          }
+        }
+
+        .lang {
+          padding: 0 10px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include breakpoint("mobile-max") {
+            padding: 0 5px;
+          }
+        }
+        .dots {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 0 5px;
+          border-right: $blue-border;
+          .dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin: 0 3px;
+          }
+          .dark-blue {
+            background-color: #265781;
+          }
+          .flame-yellow {
+            background-color: #f2e162;
+          }
+          .glow-green {
+            background-color: #52b27b;
+          }
+        }
+      }
+      &__bottom-link {
+        display: flex;
+        justify-content: flex-end;
+
+        @include breakpoint("ipad-max") {
+          display: none;
+          position: absolute;
+          width: 100vw;
+          left: 0;
+          flex-direction: row;
+          justify-content: center;
+          align-items: start;
+          padding:50px 0;
+          background-color: #52b27b;
+          z-index: 99;
+        }
+        .link-list {
+          @include breakpoint("ipad-max") {
+            flex-direction: column;
+            align-items: center;
+            border: none;
+          }
+
+          .link {
+            border-right: 1px solid gray;
+            padding: 0 10px;
+        
+              &:nth-child(6){
+  
+                padding-right: 0;
+                border: none 
+              }
+             
+
+            @include breakpoint("ipad-max") {
+              border: none;
+              margin-bottom: 15px;
+            }
+          }
+
+          .mobile-link {
+            display: none;
+            @include breakpoint("ipad-max") {
+              display: flex;
+            }
+
+            .link:last-child {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// .link-list > link{
+//   background-color: #f2e162;
+// }
+
+header .container  .link-list .big-font a{
+    font-size: 17px;
+}
+header .container  .link-list .small-font a {
+  font-size: 12px;
+}
+
+
+.search-modal{
+  display:none;
+  position: absolute;
+  right: 30px;
+  width: 200px;
+  height: 30px;
+  background: black;
+  z-index: 999;
+  .search-input{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding: 3px 60px 3px 5px;
+    border: none;
+    outline: none;
+    background-color: #f2e162;
+  }
+  button{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0 5px ;
+    background-color: #52b27b;
+    border: none;
+
+  }
+  .search-close{
+    position: absolute;
+    top:50%;
+    left: -20px;
+    transform: translateY(-50%);
+    color: $background-clr-about;
+    // width: 0; 
+    // height: 0; 
+    // border-left: 15px solid transparent;
+    // border-right: 15px solid transparent;
+    
+    // border-bottom: 15px solid $white-color;  
+    font-size: 31px;
+    font-weight: 700;
+  }
+
+
+
+}

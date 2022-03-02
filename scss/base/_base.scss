@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  li {
+    list-style: none;
+  }
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+  }
+  html {
+    color: $text-color;
+    font-family: $primary-font;
+  }
+body{
+  position: relative;
+}
+  

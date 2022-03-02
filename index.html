@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/favicon.png" />
+
+  <title>Vidarbha Irrigation Development Corporation</title>
+  <!-- Font from google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Lato:wght@400;700;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- fontawesomeicon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./scss/style.css" />
+</head>
+
+<body>
+  <header id="navbar">
+    <nav class="container">
+      <a href="#top" class="logo">
+        <img class="logo__left" src="./img/logo.svg" alt="logo" />
+
+        <span class="logo__right">Vidarbha Irrigation <br />
+          Development Corporation
+        </span>
+      </a>
+
+      <div class="nav-link">
+        <div class="nav-link__top-link">
+          <ul class="link-list">
+            <li class="link desktop-link"><a href="#">about us</a></li>
+            <li class="link desktop-link"><a href="#">tenders</a></li>
+            <li class="link desktop-link">
+              <a href="#">knowledge center</a>
+            </li>
+            <li class="extrasmall" onclick="fontDecreement()">
+              <a href="javascript:void(0);">a-</a>
+            </li>
+            <li class="medium" onclick="fontDefault()">
+              <a href="javascript:void(0);">a</a>
+            </li>
+            <li class="large" onclick="fontIncreement()">
+              <a href="javascript:void(0);">a+</a>
+            </li>
+          </ul>
+          <div class="lang">
+            <select name="language" id="language">
+              <option value="english">ENG</option>
+              <option value="hindi">HI</option>
+            </select>
+          </div>
+          <div class="dots">
+            <a href="#" class="dark-blue dot"></a>
+            <a href="#" class="glow-green dot"></a>
+            <a href="#" class="flame-yellow dot"></a>
+          </div>
+          <div class="search-container">
+            <img src="./img/search.svg" alt="search" id="search-icon" onclick="searchBarOpen()" />
+            <form class="search-modal" id="search-modal">
+              <input type="search" class="search-input" />
+              <button type="submit">search</button>
+              <a href="javascript:void(0);" class="search-close" onclick="searchBarClose()">x</a>
+            </form>
+          </div>
+          <a class="hamburger" href="javascript:void(0);" onclick="myFunction()">
+            <div class="hamburger__line" id="line"></div>
+          </a>
+        </div>
+        <div class="nav-link__bottom-link" id="menu">
+          <ul class="link-list">
+            <li class="link"><a href="">Home</a></li>
+            <li class="link"><a href=""> Annual Reports</a></li>
+            <li class="link"><a href="">Circulars </a></li>
+            <li class="link"><a href="">Disclosures </a></li>
+            <li class="link"><a href="">Governing Councils</a></li>
+            <li class="link"><a href=""> Governing Councils Decisions</a></li>
+            <li class="link mobile-link"><a href="#">about us</a></li>
+            <li class="link mobile-link"><a href="#">tenders</a></li>
+            <li class="link mobile-link"><a href="#">knowledge center</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- header end -->
+  <main>
+    <section class="hero-section">
+      <div class="banner container">
+        <div class="banner__heading">
+          <div class="banner__heading-title">VIDC</div>
+          <div class="banner__heading-subtitle">Agricultural Irrigation</div>
+          <a href="#" class="banner__heading-btn">know more</a>
+        </div>
+
+        <a href="#irrigation" class="banner-icon">
+          <div class="banner-icon__arrow-down"></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- section 1 -->
+
+    <section class="irrigation" id="irrigation">
+      <div class="container">
+        <div class="irrigation-heading">
+          <h3 class="irrigation-heading__top">manage & develop</h3>
+          <h2 class="irrigation-heading__middle">IRRIGATION</h2>
+          <h3 class="irrigation-heading__bottom">
+            in vidarbha , maharashtra
+          </h3>
+        </div>
+        <div class="irrigation-logo">
+          <img class="irrigation-logo-img" src="./img/irrigation-logo.png" alt="logo-irrigation" />
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <a href="#" class="services-info">
+          <img class="services-info__img" src="./img/hydro.svg" alt="hydro-irrigation-img" />
+          <span class="services-info__title">hrdro irrigation</span>
+        </a>
+
+        <a href="#" class="services-info">
+          <img class="services-info__img" src="./img/electricity.svg" alt="hydro-electricity-img" />
+          <span class="services-info__title">hydro electricity</span>
+        </a>
+
+        <a href="#" class="services-info">
+          <img class="services-info__img" src="./img/agriculture.svg" alt="agricultural-development-img" />
+          <span class="services-info__title">agricultural development</span>
+        </a>
+
+        <a href="#" class="services-info">
+          <img class="services-info__img" src="./img/crop.svg" alt="crop-irrigation-img" />
+          <span class="services-info__title">Crop irrigation</span>
+        </a>
+
+        <a href="#" class="services-info">
+          <img class="services-info__img" src="./img/sprinkle.svg" alt="sprinkle-irrigation-img" />
+          <span class="services-info__title">sprinkle irrigation</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about-img-con">
+          <iframe class="about-modal" id="about-video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+          <a href="javascript:void(0);" id="about-close"class="about-modal-close" onclick="aboutModalClose()">x</a>
+          <img class="about-img-con__img" src="./img/about-video.png" alt="about-img" />
+
+          <a href="javascript:void(0);" class="about-img-con__play-btn" onclick="aboutVideoOpen()">
+            <img class="about-img-con__play-btn__img" src="./img/play.png" alt="play-img" />
+          </a>
+        </div>
+        <div class="about-info">
+          <h4 class="about-info__title">About VIDC</h4>
+          <p class="about-info__desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry’s standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was
+            popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like
+          </p>
+          <a href="#" class="about-info__btn">know more</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__background"></div>
+    <div class="container">
+      <div class="footer__left">
+        <form class="footer-newsletter">
+          <label class="footer-newsletter-heading">Subscribe to our Newsletter</label>
+          <div class="footer-newsletter-subscribe">
+            <input type="email" name="email" id="email" placeholder="Enter Email Id"
+              class="footer-newsletter-subscribe__input" />
+            <button class="footer-newsletter-btn" type="submit">Subscribe Now</button>
+          </div>
+        </form>
+
+        <div class="footer-link">
+          <div class="footer-link__about">
+            <h3 class="footer-link__heading">About Us</h3>
+            <ul>
+              <li><a href="#">Establishment</a></li>
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">Our Vision</a></li>
+              <li><a href="#">Members</a></li>
+            </ul>
+          </div>
+          <div class="footer-link__imp">
+            <h3 class="footer-link__heading">Important Links</h3>
+            <div class="link-row">
+              <ul>
+                <li><a href="#">Annual Reports</a></li>
+                <li><a href="#">Circulars</a></li>
+                <li><a href="#">Governing Councils</a></li>
+                <li><a href="#">Governing Councils Decisions</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#">Disclosures</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <div class="copyright__left">
+            <span>This is the official website of Vidarbha Irrigation Development
+              Corporation</span>
+            <span class="text-bold">© Copyright 2019. All rights reserved</span>
+          </div>
+          <div class="copyright__right">
+            <span>Powered by</span>
+            <span class="text-bold"><a href="https://www.webwerks.in/" target="_blank">Webwerks Pvt Ltd</a> </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="contact">
+          <div class="contact-info">
+            <div class="contact-info-img">
+              <img src="./img/location.png" alt="location" />
+            </div>
+            <div class="contact-info-desc">
+              <h5 class="contact-info-desc__title">Contact Us</h5>
+              <a href="https://goo.gl/maps/QuYM4E9uyte5JsBp6" target="_blank" class="contact-info-desc__info text-blur">
+                Near Old Secretary Building, Sinchan Sewa Bhavan, Civil Lines,
+                Nagpur, Maharashtra 440001
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="contact-info-img">
+              <img src="./img/phone.png" alt="location" />
+            </div>
+            <div class="contact-info-desc">
+              <h5 class="contact-info-desc__title">Call Us @</h5>
+              <a href="tel:0712 256 0347" class="text-bold contact-info-desc__info">0712 256 0347</a>
+            </div>
+          </div>
+          <div class="contact-info">
+            <div class="contact-info-img">
+              <img src="./img/msg.png" alt="location" />
+            </div>
+            <div class="contact-info-desc">
+              <h5 class="contact-info-desc__title">Email Us @</h5>
+              <a href="mailto:help@vidc.in" class="text-blur contact-info-desc__info">help@vidc.in</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__follow">
+          <span class="contact__follow-title">Follow Us</span>
+          <div class="contact__follow-icon">
+            <a href="#"><i class="fab fa-instagram"></i> </a>
+            <a href="#"><i class="fab fa-facebook-f"></i> </a>
+            <a href="#"><i class="fab fa-twitter"></i> </a>
+            <a href="#"><i class="fab fa-github"></i> </a>
+            <a href="#"><i class="fab fa-pinterest"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./js/main.js"></script>
+
+</html>
