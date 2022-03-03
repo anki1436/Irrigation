@@ -1876,5 +1876,6 @@ header .container .link-list .small-font a {
   place-items: center;
   cursor: pointer;
   border-radius: 5px;
+  line-height: 1;
 }
 /*# sourceMappingURL=style.css.map */
