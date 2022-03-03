@@ -155,10 +155,20 @@
 
     <section class="about">
       <div class="container">
+        <div class="about-modal" id="about-video">
+
+          <div class="about-modal-video" >
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
+            <a class="about-modal-video-close" href="javascript:void(0);" onclick="aboutModalClose()">close</a>
+
+          </div>
+
+        </div>
+
+      
+     
         <div class="about-img-con">
-          <iframe class="about-modal" id="about-video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-          <a href="javascript:void(0);" id="about-close"class="about-modal-close" onclick="aboutModalClose()">x</a>
+         
           <img class="about-img-con__img" src="./img/about-video.png" alt="about-img" />
 
           <a href="javascript:void(0);" class="about-img-con__play-btn" onclick="aboutVideoOpen()">

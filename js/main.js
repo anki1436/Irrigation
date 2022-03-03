@@ -3,8 +3,9 @@ let y = document.getElementById("line");
 let searchModal = document.getElementById("search-modal");
 let searchIcon = document.getElementById("search-icon");
 
-let aboutClose = document.getElementById("about-close");
+
 let aboutModal = document.getElementById("about-video");
+
 
 function myFunction() {
     if (menu.style.display === "flex") {
@@ -20,7 +21,7 @@ function myFunction() {
 
 var navHeight = document.getElementById("navbar").clientHeight;
 menu.style.top = navHeight + "px";
-searchModal.style.top = navHeight + "px";
+searchModal.style.top = navHeight +10+ "px";
 console.log(navHeight);
 
 
@@ -47,20 +48,7 @@ function fontDefault() {
 
 
 }
-// function fontIncreement() {
 
-
-
-//     for (var i = 0; i < navlink.length; i++) {
-//         navlink[i].classList.add("big-font");
-//         navlink[i].classList.remove("small-font");
-
-
-//         console.log(navlink[i].classList);
-//     }
-
-
-// }
 function fontDecreement() {
     var navlink = document.getElementsByClassName('link');
 
@@ -71,44 +59,23 @@ function fontDecreement() {
         console.log(navlink[i].classList);
     }
 }
-// function searchBar(){
-//     console.log("clikc")
-//     if (searchModal.style.display = "flex") {
-//         searchModal.style.display = "none";
-//     } else {
-//         searchModal.style.display = "flex";
-//     }
 
-
-//     if (searchModal.style.display === "flex") {
-//         searchModal.style.display = "";
-//         y.classList.remove("close");
-//     } else 
-//     {
-//         searchModal.style.display = "flex";
-//         console.log("not clicked");
-//         y.classList.add("close");
-//     }
-//     console.log(y);
-// }
 
 function searchBarOpen() {
     searchModal.style.display = "flex"
 }
 
-    function searchBarClose() {
-        searchModal.style.display = "none"
+function searchBarClose() {
+    searchModal.style.display = "none"
 
-    }
+}
 
-    function aboutVideoOpen() {
-        aboutModal.style.display = "block"
-        aboutClose.style.display = "block"
-    }
-    function aboutModalClose() {
+function aboutVideoOpen() {
+    aboutModal.style.display = "flex"
+}
+function aboutModalClose() {
+    aboutModal.style.display = "none"
+}
 
-        aboutModal.style.display = "none"
-        aboutClose.style.display = "none"
 
-    }
 
